@@ -41,6 +41,17 @@ def solution(s):
     # Al final del loop retorna True.
     # Recuerda manejar el caso del string vacío primero.
     # Todo: Solution
+    # Definir el string con los dígitos válidos.
+    digitos = "0123456789"
+    # Caso con el string vacio.
+    if s == "":
+     return False
+    # recorrer s con un for y asignar True o False al input.
+    for i in range(len(s)):
+        if s[i] not in digitos:
+            return False
+    return True
+        
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
