@@ -40,6 +40,13 @@ def solution(s):
     # Pista: recorre el string con un for y busca la subcadena "ERROR"
     # caracter por caracter usando índices
     # Todo: Solution
+    #El for va a recorrer caracter por caracter del string S
+    for i in range(len(s)):
+     # el if va a servir para comparar palabra con la palabra "ERROR" y en caso de que si coincida devolver el true  
+        if s[i:i+5] == "ERROR":
+            return True
+    return False
+    #En caso de que ya se haya recorrido toda la string "s" y no se haya encontrado "ERROR" retorna false
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
