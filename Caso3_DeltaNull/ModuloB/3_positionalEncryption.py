@@ -41,6 +41,13 @@ def solution(s):
     # Usa for i in range(len(s)):
     # En cada iteración agrega str(i) + s[i] al resultado.
     # Todo: Solution
+    # Resultado vacío.
+    resultado = ""
+    # for in range
+    for i in range(len(s)):
+        resultado = resultado + str(i) + s[i]
+    # Ingresar el resultado
+    return resultado
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
