@@ -41,6 +41,16 @@ def solution(entrada):
     # desde la posición n hasta el final, luego los primeros n.
     # Usa dos loops for con range().
     # Todo: Solution
+    # Si la lista está vacía, retorna []
+    if len(lista) == 0:
+        return []
+    # Definir una variable que sea el resultado
+    resultado = []
+    # Loop: lee la lista desde la posición n, usando % para leer el inicio
+    for i in range(len(lista)):
+        resultado = resultado + [lista[(i + n) % len(lista)]]
+
+    return resultado
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
