@@ -41,6 +41,16 @@ def solution(lista_de_listas):
     # Con el segundo for recorre cada elemento de esa sublista.
     # Agrega cada elemento al resultado.
     # Todo: Solution
+    # Lista con resultado vacío.
+    resultado = []
+    # Primer for que recorre cada sublista
+    for i in range (len(lista_de_listas)):
+    # Segundo for que recorre cada elemento
+        for x in range (len(lista_de_listas[i])):
+    # Agregar cada elemento al resultado.
+            resultado = resultado + [lista_de_listas[i][x]]
+    return resultado
+
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
