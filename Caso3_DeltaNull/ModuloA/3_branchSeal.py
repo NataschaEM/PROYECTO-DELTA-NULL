@@ -41,6 +41,16 @@ def solution(s):
     # Detén el loop cuando hayas tomado 4 caracteres.
     # Luego concatena "::SEALED".
     # Todo: Solution
+    #En esta variable se van a ir guardando los caracteres para retornar el resultado
+    resultado = ""
+    #El for va a realizar el conteo hasta almenos 4 caracteres o menos si el string es más corto. 
+    for i in range(min(4, len(s))):
+        #Acá se va a guardar los 4 caracteres o menos del string
+        resultado += s[i]
+    #Se le pide a la maquina que despues de hacer el conteo de los 4 caracteres, agregue "::SEALED"
+    resultado += "::SEALED"
+    return resultado
+        
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────

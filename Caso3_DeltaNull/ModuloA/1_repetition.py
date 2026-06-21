@@ -43,6 +43,18 @@ def solution(s):
     # Pista: construye un string resultado.
     # Agrega el carácter actual solo si es diferente al anterior.
     # Todo: Solution
+    #Va ir guardando el string sin repetir los caracteres
+    resultado = ""
+    #Va ir guardando el ultimo caracteres que se uso para validar que no se repita
+    ultimo_char = ""
+    #El for va a ir recorriendo caracter por caracter 
+    for char in s:
+        #El if va a validar que el ultimo caracter sea diferente al siguiente en revisión
+        #si son iguales no hara nada, si es diferente va a entrar a la condicion
+         if char != ultimo_char:
+             resultado += char
+             ultimo_char = char
+    return resultado
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────

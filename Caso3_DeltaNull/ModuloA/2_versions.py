@@ -37,6 +37,15 @@ def solution(lista):
     # Pista: inicializa un contador en 0.
     # Recorre la lista con for y suma 1 cuando len(item) == 8.
     # Todo: Solution
+    #El contador va a iniciar en 0
+    contador = 0
+    #el for va a recorrer cada item de la lista
+    for i in lista:
+        #el if va a verificar que cumpla con la longitud de 8
+        if len(i) == 8:
+            #si cumple, se le suma 1 en el contador 
+            contador += 1
+    return contador
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
