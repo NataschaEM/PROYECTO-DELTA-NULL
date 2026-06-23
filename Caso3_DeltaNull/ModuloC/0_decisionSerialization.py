@@ -40,10 +40,11 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(lista):
-    # Pista: crea una lista resultado vacía.
-    # Recorre la lista con for.
-    # En cada paso agrega str(numero) al resultado.
-    # Todo: Solution
+    resultado = [ ]
+    for numero in lista:
+        resultado.append(str(numero))
+    print(resultado)
+    return resultado
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
