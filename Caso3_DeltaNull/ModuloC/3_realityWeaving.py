@@ -38,11 +38,18 @@ import base64
 
 def solution(entrada):
     s1, s2 = entrada
-    # Pista: encuentra cuál es el largo mínimo con un if.
-    # Usa un loop hasta el mínimo para entrelazar.
-    # Luego agrega los caracteres restantes del más largo.
-    # Todo: Solution
-    pass
+    if len(s1) > len(s2):
+        minimo = len(s2)
+        no_minimo = s1
+    else:
+        minimo = len(s1)
+        no_minimo = s2
+
+    resultado = ""
+    for posicion_string in range(minimo):
+        resultado = resultado + (s1[posicion_string] + s2[posicion_string])
+    resultado = f"{resultado}{no_minimo[minimo: ]}"
+    return resultado
 
 # ── No modifiques debajo de esta línea ──────────────────
 tests = [
