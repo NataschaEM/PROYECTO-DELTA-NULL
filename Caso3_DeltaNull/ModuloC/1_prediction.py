@@ -38,12 +38,11 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(lista):
-    # Pista: guarda lista[0] en una variable llamada "maximo".
-    # Recorre la lista con for.
-    # Si el elemento actual es mayor que "maximo", actualiza "maximo".
-    # Al final retorna "maximo".
-    # Todo: Solution
-    pass
+    maximo = lista[0]
+    for numero in lista:
+        if numero > maximo:
+            maximo = numero
+    return maximo
 
 # ── No modifiques debajo de esta línea ──────────────────
 tests = [
