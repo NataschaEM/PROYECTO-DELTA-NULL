@@ -40,11 +40,16 @@ import base64
 
 def solution(s):
     # Pista: usa palabras = s.split() para separar.
+    palabras = s.split()
     # Crea una lista vacía para el resultado.
+    resultado = []
     # Recorre con for i in range(len(palabras) - 1, -1, -1)
     # para ir de atrás hacia adelante.
+    for i in range(len(palabras) - 1, -1, -1):
+        resultado.append(palabras[i])
     # Agrega cada palabra al resultado.
     # Finalmente une con " ".join(resultado).
+    return " ".join(resultado)
     # Todo: Solution
     pass
 
