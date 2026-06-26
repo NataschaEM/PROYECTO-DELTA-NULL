@@ -45,7 +45,7 @@ def solution(lista):
         resultado.append(str(numero)) #Por cada número, se usa el .append(), el cual, permite agregar elementos a una lista
         #En este caso, se agregan los elementos nuevos en la lista vacía creada anteriormente, y en la lista, se añaden los números transformados a strings
     print(resultado) #Se imprime la lista del resultado, que muestra los números ya transformados a strings
-    return resultado #La función devuelve la lista resultado
+    return resultado #La función devuelve la lista resultado.
     pass
 
 # ── No modifiques debajo de esta línea ──────────────────
