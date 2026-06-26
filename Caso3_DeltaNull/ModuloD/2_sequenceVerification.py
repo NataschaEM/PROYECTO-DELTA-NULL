@@ -38,10 +38,17 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(lista):
+    
     # Pista: recorre la lista con for i in range(len(lista) - 1).
     # Compara lista[i] con lista[i+1].
     # Si lista[i] > lista[i+1], retorna False inmediatamente.
+    for i in range(len(lista) -1):
+        if lista[i] > lista[i+1]:
+            return False
+    return True
+
     # Si el loop termina sin problemas, retorna True.
+    
     # Todo: Solution
     pass
 

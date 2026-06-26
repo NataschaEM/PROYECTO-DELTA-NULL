@@ -40,8 +40,15 @@ import base64
 
 def solution(s):
     # Pista: define letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     # Crea resultado = ""
+    resultado = ""
     # Recorre s con for. Si el carácter está en letras, agrégalo al resultado.
+    for caracter in s:
+        if caracter in letras:
+            resultado+=caracter
+    
+    return resultado
     # Todo: Solution
     pass
 

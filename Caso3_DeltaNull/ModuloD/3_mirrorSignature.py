@@ -40,9 +40,13 @@ import base64
 
 def solution(s):
     # Pista: construye el reverso con un loop.
+    reverso = ""
     # Recorre s con for i in range(len(s) - 1, -1, -1)
-    # y concatena cada carácter.
+    # y concatena cada carácter
+    for i in range(len(s) - 1, -1, -1):
+        reverso += s[i]
     # Retorna s + reverso.
+    return s + reverso
     # Todo: Solution
     pass
 
