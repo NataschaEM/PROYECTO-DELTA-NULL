@@ -38,12 +38,12 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(lista):
-    maximo = lista[0]
-    for numero in lista:
-        if numero > maximo:
-            maximo = numero
-    return maximo
-
+    maximo = lista[0] #Se supone que el valor máximo es el primer valor que sale en la lista dada, para poder compararlo
+    for numero in lista: #Se abre un ciclo que pase por todos los elementos de la lista
+        if numero > maximo: #Si el valor por el que está pasando el ciclo es mayor al elemento que está en la variable maximo
+            maximo = numero #Se cambia el valor de la variable maximo por el numero que es mayor al valor que estaba anteriormente
+    return maximo #El ciclo pasa por todos los números, y el número que al final quede en la variable maximo es el valor mayor de la lista
+    #Por lo que, el ciclo devuelve el valor maximo al final.
 # ── No modifiques debajo de esta línea ──────────────────
 tests = [
     ([3, 7, 2, 9, 1], 9),
