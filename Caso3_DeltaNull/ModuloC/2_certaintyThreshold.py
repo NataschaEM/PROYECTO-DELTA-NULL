@@ -38,12 +38,12 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(s):
-    mayúsculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    contador = 0
-    for LETRA in s:
-        if LETRA in mayúsculas:
-            contador = contador + 1
-    return contador
+    mayúsculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" #Se definen todas las letras que son mayúsculas y se guardan en una variable
+    contador = 0 #Se coloca un contador iniciando en 0, este nos va a ayudar a contar la cantidad de letras mayúsculas
+    for LETRA in s: #Se abre un ciclo que pase por todas las letras del string dado
+        if LETRA in mayúsculas: #Si la letra por la que está pasando el ciclo está dentro del string de letras mayúsculas
+            contador = contador + 1 #Se aumenta el contador
+    return contador #Al final, se devuelve el contador final cuando ya se pasó por todas las letras del string dado.
 
 # ── No modifiques debajo de esta línea ──────────────────
 tests = [
