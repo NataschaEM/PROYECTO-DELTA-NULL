@@ -37,7 +37,7 @@ import base64
 # Puedes modificar el código a partir de aquí:
 
 def solution(entrada):
-    s1, s2 = entrada #Estas son las entradas, que es la tupla de dos strings dados
+    s1, s2 = entrada #Estas son las entradas, que es la tupla de los dos strings dados
     if len(s1) > len(s2): #Se comparan las longitudes de ambos strings, esto para averiguar cual es mayor
         minimo = len(s2) #Si la longitud del primer string resulta mayor, se guarda el otro string como el más pequeño
         no_minimo = s1 #El otro string que es más largo queda guardado en otra variable que indica que es el más largo
